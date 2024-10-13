@@ -335,7 +335,7 @@
 <p>​              将所有位取反，末尾加1，所得的数字就是该复数的绝对值    前面全补1</p>
 </li>
 </ul>
-<h5 id="十三、位运算符"><a href="#十三、位运算符" class="headerlink" title="十三、位运算符"></a>十三、位运算符</h5><h6 id="amp-–按位与"><a href="#amp-–按位与" class="headerlink" title="&amp;–按位与"></a>&amp;–按位与</h6><p>​     &amp;&amp; 逻辑与 也叫并且（左边有右边是否相等-真1或假0）</p>
+<h5 id="十三、位运算符"><a href="#十三、位运算符" class="headerlink" title="十三、位运算符"></a>十三、位运算符</h5><h6 id="–按位与"><a href="#–按位与" class="headerlink" title="&amp;–按位与"></a>&amp;–按位与</h6><p>​     &amp;&amp; 逻辑与 也叫并且（左边有右边是否相等-真1或假0）</p>
 <p>​     &amp;将两个二进制进行一个相与</p>
 <ul>
 <li><p>​    1&amp;1&#x3D;1</p>
@@ -365,11 +365,11 @@
 <li>1^1&#x3D;0</li>
 <li>0^0&#x3D;0</li>
 </ul>
-<h6 id="lt-lt-按位左移"><a href="#lt-lt-按位左移" class="headerlink" title="&lt;&lt;    按位左移"></a>&lt;&lt;    按位左移</h6><p>​       i&lt;&lt;1    表示把i的所有二进制左移一位</p>
+<h6 id="按位左移"><a href="#按位左移" class="headerlink" title="&lt;&lt;    按位左移"></a>&lt;&lt;    按位左移</h6><p>​       i&lt;&lt;1    表示把i的所有二进制左移一位</p>
 <p>​      左移n位相当于乘以2的n次方</p>
 <p><img src="/2024/10/21/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20240318171945054.png" alt="image-20240318171945054"></p>
 <p>​      答案下面的快，</p>
-<h6 id="gt-gt-按位右移"><a href="#gt-gt-按位右移" class="headerlink" title="&gt;&gt;  按位右移"></a>&gt;&gt;  按位右移</h6><p>​       i&gt;&gt;3    表示把i的所有二进制左移3位,左边一般都为0</p>
+<h6 id="按位右移"><a href="#按位右移" class="headerlink" title="&gt;&gt;  按位右移"></a>&gt;&gt;  按位右移</h6><p>​       i&gt;&gt;3    表示把i的所有二进制左移3位,左边一般都为0</p>
 <p>​      右移n位相当于除以2的n次方</p>
 <p>通过位运算符我们可以对数据精确到每一位</p>
 ]]></content>
