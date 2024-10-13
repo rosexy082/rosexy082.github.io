@@ -1,5 +1,5 @@
-http://lyay23.github.io/2024/10/21/C%E8%AF%AD%E8%A8%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/
-http://lyay23.github.io/2024/10/21/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
+http://lyay23.github.io/posts/18d54854/
+http://lyay23.github.io/posts/9ec06885/
 http://lyay23.github.io/guestbook/index.html
 http://lyay23.github.io/tages/index.html
 http://lyay23.github.io/lib/pace/README.html
