@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://lyay23.github.io/posts/6ead9846/</loc>
-    
-    <lastmod>2024-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://lyay23.github.io/posts/9ec06885/</loc>
     
     <lastmod>2024-10-21</lastmod>
@@ -22,7 +13,25 @@
   <url>
     <loc>http://lyay23.github.io/posts/18d54854/</loc>
     
-    <lastmod>2024-10-17</lastmod>
+    <lastmod>2024-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://lyay23.github.io/about/index.html</loc>
+    
+    <lastmod>2024-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://lyay23.github.io/posts/6ead9846/</loc>
+    
+    <lastmod>2024-10-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -84,15 +93,6 @@
   
   <url>
     <loc>http://lyay23.github.io/resources/index.html</loc>
-    
-    <lastmod>2023-06-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://lyay23.github.io/about/index.html</loc>
     
     <lastmod>2023-06-04</lastmod>
     
