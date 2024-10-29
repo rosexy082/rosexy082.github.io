@@ -1251,7 +1251,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b5ff98;
+  background: #ecadc4;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2859,4 +2859,45 @@ div.post-block.tag .collection-title h2 {
   div.post-block.tag .collection-title h2 {
     font-size: 18px;
   }
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+body {
+  background: url("images/ac-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+.post-block {
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.post-block code {
+  word-break: break-all;
+}
+.post-block a {
+  word-break: break-all;
+}
+.post-body img {
+  border-radius: 1em;
+}
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #0477ab;
+  text-decoration: underline;
+}
+.posts-expand .post-tags a {
+  border-bottom: none;
+  padding: 1px 5px;
+  background: var(--content-bg-color);
 }
