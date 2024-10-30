@@ -1259,7 +1259,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ffa136;
+    background: #c2ffd6;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1995,6 +1995,14 @@ pre code {
   position: absolute;
   top: 0;
   width: 100%;
+}
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #ff106c;
+  text-decoration: underline;
 }
 .post-gallery {
   display: flex;
