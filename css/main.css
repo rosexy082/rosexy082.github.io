@@ -1304,7 +1304,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #03ffff;
+    background: #a78761;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1607,7 +1607,6 @@ li.recent_posts_li {
   line-height: 1.8;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .post-toc .nav .nav-child {
   --height: 0;
