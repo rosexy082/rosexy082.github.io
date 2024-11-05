@@ -17,3 +17,18 @@ document.addEventListener('page:loaded', () => {
     });
   });
 });
+
+script.
+  var intervalFunctionID = setInterval(function(){ myTimer() }, 1000);
+  function myTimer() {
+      if (document.getElementById("taboola-livere") != null)
+      {
+        if (document.getElementById("taboola-livere").style.display == "none")
+        {
+          //alert("Interval function stopped");
+          clearInterval(intervalFunctionID);
+        }
+      }
+      document.getElementById("taboola-livere").style.display="none";
+      //alert("Interval function running");
+  }
