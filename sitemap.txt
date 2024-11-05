@@ -8,8 +8,8 @@ http://lyay23.github.io/guestbook/index.html
 http://lyay23.github.io/tages/index.html
 http://lyay23.github.io/lib/pace/README.html
 http://lyay23.github.io/lib/three/README.html
-http://lyay23.github.io/lib/three/renovate.json
 http://lyay23.github.io/lib/three/package.json
+http://lyay23.github.io/lib/three/renovate.json
 http://lyay23.github.io/resources/index.html
 http://lyay23.github.io/tags/index.html
 http://lyay23.github.io/categories/index.html
