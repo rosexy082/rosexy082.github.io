@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>http://lyay23.github.io/lib/three/renovate.json</loc>
+    <loc>http://lyay23.github.io/lib/three/package.json</loc>
     
     <lastmod>2023-06-04</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>http://lyay23.github.io/lib/three/package.json</loc>
+    <loc>http://lyay23.github.io/lib/three/renovate.json</loc>
     
     <lastmod>2023-06-04</lastmod>
     
@@ -176,6 +176,13 @@
   </url>
   
   <url>
+    <loc>http://lyay23.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2024-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://lyay23.github.io/tags/java/</loc>
     <lastmod>2024-11-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -200,6 +207,13 @@
   
   <url>
     <loc>http://lyay23.github.io/categories/%E5%8A%9B%E6%89%A3/</loc>
+    <lastmod>2024-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://lyay23.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2024-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
