@@ -1,3 +1,5 @@
+http://lyay23.github.io/posts/6ead9846/
+http://lyay23.github.io/posts/9daba997/
 http://lyay23.github.io/posts/79666db/
 http://lyay23.github.io/about/index.html
 http://lyay23.github.io/categories/index.html
@@ -6,7 +8,6 @@ http://lyay23.github.io/tages/index.html
 http://lyay23.github.io/resources/index.html
 http://lyay23.github.io/guestbook/index.html
 http://lyay23.github.io/posts/c7b053e8/
-http://lyay23.github.io/posts/6ead9846/
 http://lyay23.github.io/posts/66e64d45/
 http://lyay23.github.io/posts/9ec06885/
 http://lyay23.github.io/lib/pace/README.html
