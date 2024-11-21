@@ -25,63 +25,155 @@
 }
 
 
-/* 页脚footer */
-/* 渐变色滚动动画 */
-@-webkit-keyframes Gradient {
-    0% {
-        background-position: 0 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0 50%;
-    }
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-@-moz-keyframes Gradient {
-    0% {
-        background-position: 0 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0 50%;
-    }
+::-webkit-scrollbar-track {
+  background-color: rgba(73, 177, 245, 0.2);
+  border-radius: 2em;
 }
 
-@keyframes Gradient {
-    0% {
-        background-position: 0 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0 50%;
-    }
+::-webkit-scrollbar-thumb {
+  background-color: #49b1f5;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
 }
-#footer {
-    background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    -webkit-animation: Gradient 10s ease infinite;
-    -moz-animation: Gradient 10s ease infinite;
-    animation: Gradient 10s ease infinite;
-    -o-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
 }
-#footer:before {
-    background-color: rgba(0, 0, 0, 0);
+
+::-moz-selection {
+  color: #fff;
+  background-color: #49b1f5;
+}
+
+
+
+#侧边栏隐藏
+.card-archives
+ul.card-archive-list
+> .card-archive-list-item
+a
+span:first-child,
+#aside_content
+.card-categories
+ul.card-category-list
+> .card-category-list-item
+a
+span:first-child {
+    width: auto;
+    min-width: 50%;
+}
+
+
+/* 侧边栏个人信息卡片动态渐变色 */
+#aside-content>.card-widget.card-info{
+    background: linear-gradient(-45deg, rgba(255, 225, 245, 0.6), 
+rgba(255, 225, 225, 0.9), 
+rgba(225, 255, 251, 0.9), 
+rgba(255, 225, 255, 0.6));
+}
+[data-theme=dark] #aside-content>.card-widget.card-info {
+    background: linear-gradient(-45deg, rgb(225, 238, 255), 
+    rgba(225, 255, 253, 0.9), 
+    rgba(225, 243, 255, 0.9), 
+    rgba(255, 225, 253, 0.6));
+}
+/* 侧边栏公告栏卡片渐变色 */
+#aside-content>.card-widget.card-announcement{
+    background: linear-gradient(-45deg, rgba(255, 225, 245, 0.6), 
+    rgba(255, 225, 225, 0.9), 
+    rgba(225, 255, 251, 0.9), 
+    rgba(255, 225, 255, 0.6));
+}
+[data-theme=dark] #aside-content>.card-widget.card-announcement{
+    background: linear-gradient(-45deg, rgba(255, 225, 245, 0.6), 
+    rgba(255, 225, 225, 0.9), 
+    rgba(225, 255, 251, 0.9), 
+    rgba(255, 225, 255, 0.6));
+}
+/* 侧边栏目录最新文章卡片渐变色 */
+#aside-content>.sticky_layout>.card-widget{
+    background: linear-gradient(-45deg, rgba(255, 225, 245, 0.6), 
+    rgba(255, 225, 225, 0.9), 
+    rgba(225, 255, 251, 0.9), 
+    rgba(255, 225, 255, 0.6));
+}
+[data-theme=dark] #aside-content>.sticky_layout>.card-widget{
+    background: linear-gradient(-45deg, rgba(255, 225, 245, 0.6), 
+    rgba(255, 225, 225, 0.9), 
+    rgba(225, 255, 251, 0.9), 
+    rgba(255, 225, 255, 0.6));
+}
+/* 个人信息Follow me按钮 */
+#aside-content>.card-widget.card-info>#card-info-btn {
+    background-color: #3eb8be;
+    border-radius: 8px;
+}
+/*文章页面*/
+/* .layout>#post {
+    background: linear-gradient(-45deg, rgba(225, 255, 252, 0.8), 
+rgba(255, 225, 229, 0.9), 
+rgba(225, 255, 225, 0.9), 
+rgba(253, 255, 225, 0.8));
+}
+[data-theme=dark] .layout>#post {
+    background: linear-gradient(-45deg, rgba(24,40,72,.2), 
+rgba(35,37,58,.9), 
+rgba(35,37,58,.9), 
+rgba(24,40,72,.2));
+} */
+/*主页文章预览页面*/
+#recent-posts>.recent-post-item{
+    background: linear-gradient(-45deg, rgba(225, 255, 252, 0.8), 
+    rgba(255, 225, 229, 0.9), 
+    rgba(225, 255, 225, 0.9), 
+    rgba(253, 255, 225, 0.8));
+}
+[data-theme=dark] #recent-posts>.recent-post-item{
+    background: linear-gradient(-45deg, rgba(24,40,72,.2), 
+rgba(35,37,58,.9), 
+rgba(35,37,58,.9), 
+rgba(24,40,72,.2));
+}
+ 
+/*分类页面*/
+.layout>#page {
+    background: linear-gradient(-45deg, rgba(225,235,255,.8), 
+rgba(225,235,255,.9), 
+rgba(225,235,255,.9), 
+rgba(225,235,255,.8));
+}
+[data-theme=dark] .layout>#page {
+    background: linear-gradient(-45deg, rgba(24,40,72,.2), 
+rgba(35,37,58,.9), 
+rgba(35,37,58,.9), 
+rgba(24,40,72,.2));
+}
+ 
+/*时间轴页面*/
+.layout>#archive {
+    background: linear-gradient(-45deg, rgba(225,235,255,.8), 
+rgba(225,235,255,.9), 
+rgba(225,235,255,.9), 
+rgba(225,235,255,.8));
+}
+[data-theme=dark] .layout>#archive {
+    background: linear-gradient(-45deg, rgba(24,40,72,.2), 
+rgba(35,37,58,.9), 
+rgba(35,37,58,.9), 
+rgba(24,40,72,.2));
 }
