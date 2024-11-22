@@ -234,11 +234,41 @@
 /* 顶部样式 */
 .author-content.author-content-item.essayPage {
   height: 19rem;
-  background: url(https://img02.anheyu.com/adminuploads/1/2022/08/21/630249e2df20f.jpg) left 28% / cover no-repeat;
+  background: url(/img/me.jpg) left 28% / cover no-repeat;
   color: var(--anzhiyu-white);
   overflow: hidden;
   margin-top: 0px;
+  position: relative;
 }
+
+/增加下边内容后运行看一下效果/
+.author-content-item-tips {
+font-size: 12px;
+margin-left: 10px;
+margin-top: 10px;
+}
+.author-content-item-title {
+font-size: 30px;
+margin-left: 10px;
+}
+.content-bottom {
+position: absolute;
+bottom: 10px;
+margin-bottom: 10px;
+font-size: 17px;
+margin-left: 10px;
+}
+
+.banner-button-group {
+position: absolute;
+bottom: 35px;
+right: 18px;
+display: flex;
+justify-content: flex-end;
+font-size: 20px;
+margin-right: 20px;
+}
+
 #page:has(#essay_page) .author-content-item .card-content .banner-button-group .banner-button:hover {
   color: var(--anzhiyu-white);
   border-radius: 20px !important;
