@@ -1,0 +1,469 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>谜底 | 李阳的秘密小屋</title><meta name="author" content="李阳"><meta name="copyright" content="李阳"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="不积硅步 无以至千里">
+<meta property="og:type" content="website">
+<meta property="og:title" content="谜底">
+<meta property="og:url" content="http://lyay23.github.io/about/index.html">
+<meta property="og:site_name" content="李阳的秘密小屋">
+<meta property="og:description" content="不积硅步 无以至千里">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://lyay23.github.io/img/avatar.png">
+<meta property="article:published_time" content="2024-10-21T02:00:00.000Z">
+<meta property="article:modified_time" content="2024-11-22T03:39:46.216Z">
+<meta property="article:author" content="李阳">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lyay23.github.io/img/avatar.png"><link rel="shortcut icon" href="/img/favicon-48.png"><link rel="canonical" href="http://lyay23.github.io/about/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '谜底',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/css/iconfont.css"><link rel="stylesheet" href="/css/aplayer.css"><link rel="stylesheet" href="/css/APlayer.min.css"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="李阳的秘密小屋" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head><body><div id="web_bg" style="background-color: #efefef;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw icon-taiyang"></i><span> 小世界</span></a></li><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div></div></div><div class="page type-about" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw icon-taiyang"></i><span> 小世界</span></a></li><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><h1 class="title-seo">谜底</h1></header><main class="layout hide-aside" id="content-inner"><div id="page"><div class="page-title">谜底</div><div id="about-page"><div class="author-box"><div class="author-img"><img class="no-lightbox" src="/img/avatar.png"></div><div class="image-dot"></div></div><p class="p center logo large">关于我</p><p class="p center small">随便看看吧✨</p><div class="author-content"><div class="author-content-item myInfoAndSayHello"><div class="title1">你好，很高兴认识你👋</div><div class="title2">我叫<span class="inline-word">李阳</span></div><div class="title1">是一名 学生、混子、<span class="inline-word">博主</span></div></div><div class="aboutsiteTips author-content-item"><div class="author-content-item-tips">追求</div><h2>源于<br>热爱而去<span class="inline-word">感受</span><div class="mask"><span class="first-tips">学习</span><span>生活</span><span data-up>程序</span><span data-show>体验</span></div></h2></div></div><div class="hello-about"><div class="cursor" style="translate:none;rotate:none;scale:none;transform:translate(721px,180px)"></div><div class="shapes"><div class="shape shape-1" style="translate:none;rotate:none;scale:none;transform:translate(721px,180px)"></div><div class="shape shape-2" style="translate:none;rotate:none;scale:none;transform:translate(721px,180px)"></div><div class="shape shape-3" style="translate:none;rotate:none;scale:none;transform:translate(721px,180px)"></div></div><div class="content"><h1>liyang!</h1></div></div><div class="author-content"><div class="author-content-item skills"><div class="card-content"><div class="author-content-item-tips">技能</div><span class="author-content-item-title">开启创造力</span><div class="skills-style-group"><div class="tags-group-all"><div class="tags-group-wrapper"><div class="tags-group-icon-pair"><div class="tags-group-icon" style="background: #b8f0ae"><img class="no-lightbox" title="Vue" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633001374747b.png"></div><div class="tags-group-icon" style="background: #222"><img class="no-lightbox" title="React" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"></div></div><div class="tags-group-icon-pair"><div class="tags-group-icon" style="background: #57b6e6"><img class="no-lightbox" title="Docker" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/63300647df7fa.png"></div><div class="tags-group-icon" style="background: #4082c3"><img class="no-lightbox" title="Photoshop" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/63300647e1f10.png"></div></div><div class="tags-group-icon-pair"><div class="tags-group-icon" style="background: #333"><img class="no-lightbox" title="Node" src="https://npm.elemecdn.com/anzhiyu-blog@2.1.1/img/svg/node-logo.svg"></div><div class="tags-group-icon" style="background: #2e3a41"><img class="no-lightbox" title="Webpack" src="https://img02.anheyu.com/adminuploads/1/2022/09/26/6330ff27e5c9b.png"></div></div><div class="tags-group-icon-pair"><div class="tags-group-icon" style="background: #fff"><img class="no-lightbox" title="Pinia" src="https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/pinia-logo.svg"></div><div class="tags-group-icon" style="background: #fff"><img class="no-lightbox" title="Python" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/63300647dea51.png"></div></div><div class="tags-group-icon-pair"><div class="tags-group-icon" style="background: #937df7"><img class="no-lightbox" title="Vite" src="https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/vite-logo.svg"></div><div class="tags-group-icon" style="background: #4499e4"><img class="no-lightbox" title="Flutter" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633004063ff15.png"></div></div><div class="tags-group-icon-pair"><div class="tags-group-icon" style="background: #fff"><img class="no-lightbox" title="Java" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633005bf0fd1e.jpg"></div><div class="tags-group-icon" style="background: #2c51db"><img class="no-lightbox" title="CSS3" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633006cc55e07.png"></div></div><div class="tags-group-icon-pair"><div class="tags-group-icon" style="background: #f7cb4f"><img class="no-lightbox" title="JS" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633006eee047b.png"></div><div class="tags-group-icon" style="background: #e9572b"><img class="no-lightbox" title="HTML" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633006f9ab27d.png"></div></div><div class="tags-group-icon-pair"><div class="tags-group-icon" style="background: #df5b40"><img class="no-lightbox" title="Git" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633006e37c7fd.webp"></div><div class="tags-group-icon" style="background: #e65164"><img class="no-lightbox" title="Apifox" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633007087a4dc.webp"></div></div></div></div><div class="skills-list"><div class="skill-info"><div class="skill-icon" style="background: #b8f0ae"><img class="no-lightbox" title="Vue" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633001374747b.png"></div><div class="skill-name"><span>Vue</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #222"><img class="no-lightbox" title="React" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"></div><div class="skill-name"><span>React</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #57b6e6"><img class="no-lightbox" title="Docker" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/63300647df7fa.png"></div><div class="skill-name"><span>Docker</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #4082c3"><img class="no-lightbox" title="Photoshop" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/63300647e1f10.png"></div><div class="skill-name"><span>Photoshop</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #333"><img class="no-lightbox" title="Node" src="https://npm.elemecdn.com/anzhiyu-blog@2.1.1/img/svg/node-logo.svg"></div><div class="skill-name"><span>Node</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #2e3a41"><img class="no-lightbox" title="Webpack" src="https://img02.anheyu.com/adminuploads/1/2022/09/26/6330ff27e5c9b.png"></div><div class="skill-name"><span>Webpack</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #fff"><img class="no-lightbox" title="Pinia" src="https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/pinia-logo.svg"></div><div class="skill-name"><span>Pinia</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #fff"><img class="no-lightbox" title="Python" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/63300647dea51.png"></div><div class="skill-name"><span>Python</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #937df7"><img class="no-lightbox" title="Vite" src="https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/vite-logo.svg"></div><div class="skill-name"><span>Vite</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #4499e4"><img class="no-lightbox" title="Flutter" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633004063ff15.png"></div><div class="skill-name"><span>Flutter</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #fff"><img class="no-lightbox" title="Java" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633005bf0fd1e.jpg"></div><div class="skill-name"><span>Java</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #2c51db"><img class="no-lightbox" title="CSS3" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633006cc55e07.png"></div><div class="skill-name"><span>CSS3</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #f7cb4f"><img class="no-lightbox" title="JS" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633006eee047b.png"></div><div class="skill-name"><span>JS</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #e9572b"><img class="no-lightbox" title="HTML" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633006f9ab27d.png"></div><div class="skill-name"><span>HTML</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #df5b40"><img class="no-lightbox" title="Git" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633006e37c7fd.webp"></div><div class="skill-name"><span>Git</span></div></div><div class="skill-info"><div class="skill-icon" style="background: #e65164"><img class="no-lightbox" title="Apifox" src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633007087a4dc.webp"></div><div class="skill-name"><span>Apifox</span></div></div><div class="etc">...</div></div></div></div></div><div class="author-content-item careers"><div class="card-content"><div class="author-content-item-tips">生涯</div><span class="author-content-item-title">无限进步</span><div class="careers-group"><div class="careers-item"><div class="circle" style="background:#357ef5"></div><div class="name">EDU,软件工程专业</div></div></div><img class="author-content-img no-lightbox" alt="生涯" src="https://img02.anheyu.com/adminuploads/1/2022/09/26/6330e9bcc39cc.png"></div></div></div><div class="author-content"><div class="about-statistic author-content-item"><div class="card-content"><div class="author-content-item-tips">数据</div><span class="author-content-item-title">访问统计</span><div id="statistic"></div><div class="post-tips">统计信息来自<a href="https://invite.51.la/1NzKqTeb?target=V6" target="_blank" rel="noopener nofollow">51la网站统计</a></div><div class="banner-button-group"><a class="banner-button" onclick="pjax.loadUrl(&quot;/archives/&quot;)" data-pjax-state><i class="fas fa-circle-right"></i><span class="banner-button-text">文章隧道</span></a></div></div></div><div class="author-content-item-group column mapAndInfo"><div class="author-content-item map single"><span class="map-title">我现在住在<b>中国，湖北省</b></span></div><div class="author-content-item selfInfo single"><div><span class="selfInfo-title">生于</span><span class="selfInfo-content" id="selfInfo-content-year" style="color:#43a6c6">2003</span></div><div><span class="selfInfo-title">武汉纺织大学外经贸学院</span><span class="selfInfo-content" style="color:#c69043">软件工程</span></div><div><span class="selfInfo-title">现在职业</span><span class="selfInfo-content" style="color:#b04fe6">大三学生👨‍🎓</span></div></div></div></div><div class="author-content"><div class="author-content-item personalities"><div class="author-content-item-tips">性格</div><span class="author-content-item-title">守卫者</span><div class="title2" style="color:#ac899c">ISFJ-T</div><div class="post-tips">在<a href="https://www.16personalities.com/" target="_blank" rel="noopener nofollow">16personalities</a> 了解更多关于<a target="_blank" rel="noopener external nofollow" href="https://www.16personalities.com/ch/isfj-%E4%BA%BA%E6%A0%BC">守卫者</a></div><div class="image"><img class="no-lightbox" src="https://www.16personalities.com/static/images/personality-types/avatars/isfj-defender.svg"></div></div></div><div class="author-content"><div class="author-content-item maxim"><div class="author-content-item-tips">座右铭</div><span class="maxim-title"><span style="opacity:.6;margin-bottom:8px">不积硅步，</span><span>无以至千里。</span></span></div><div class="author-content-item buff"><div class="card-content"><div class="author-content-item-tips">特长</div><span class="buff-title"><span style="opacity:.6;margin-bottom:8px">脑回路新奇的<span class="inline-word">鸡公煲</span></span><span>发呆指数<span class="inline-word">MAX</span></span></span></div><div class="card-background-icon"><i class="fas fa-dice-d20"></i></div></div><div class="author-content-item like-music"><div class="card-content"><div class="author-content-item-tips">音乐偏好</div><span class="author-content-item-title">陈奕迅、民谣、</span><span class="author-content-item-title">华语流行</span><div class="content-bottom"><div class="tips">跟 李阳 一起欣赏更多音乐</div></div><div class="banner-button-group"><a class="banner-button" onclick="pjax.loadUrl(&quot;/music/&quot;)" data-pjax-state><i class="fas fa-circle-right"></i><span class="banner-button-text">更多推荐</span></a></div></div></div></div><div class="author-content"><div class="create-site-post author-content-item single"><div class="author-content-item-tips">心路历程</div>欢迎来到我的博客 😝，这里是我记笔记的地方 🙌，目前就读于武汉<strong>武汉纺织大学外经贸学院</strong>的<strong>软件工程</strong>专业，虽然有时候常常会忘记更新笔记，咕咕 ✋~ 但是记笔记真的是一个很棒的习惯 💪，能把学下来的知识进行积累，沉淀，有一句话说的好，能教给别人的知识，才是真正学会了的知识 ⚡<psw> </psw><del>我一定会好好学习 天天向上 当上CEO 迎娶白富美 走上人生巅峰！</del></div></div></div><script src="/js/countup.js"></script><script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js"></script><script>(() => {
+  function isInViewPortOfOne(el) {
+    if (!el) return;
+    const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    const offsetTop = el.offsetTop;
+    const scrollTop = document.documentElement.scrollTop;
+    const top = offsetTop - scrollTop;
+    return top <= viewPortHeight;
+  }
+  fetch('https://v6-widget.51.la/v6/{ 3KOJne8bzHjejaBV }/quote.js').then(res => res.text()).then((data) => {
+      let title = ['最近活跃', '今日人数', '今日访问', '昨日人数', '昨日访问', '本月访问', '总访问量']
+      let num = data.match(/(<\/span><span>).*?(\/span><\/p>)/g)
+
+      num = num.map((el) => {
+        let val = el.replace(/(<\/span><span>)/g, '')
+        let str = val.replace(/(<\/span><\/p>)/g, '')
+        return str
+      })
+
+      let statisticEl = document.getElementById('statistic')
+
+      // 自定义不显示哪个或者显示哪个，如下为不显示 最近活跃访客 和 总访问量
+      let statistic = []
+      for (let i = 0; i < num.length; i++) {
+          if (!statisticEl) return
+          if (i == 0 || i == num.length - 1) continue;
+          statisticEl.innerHTML += '<div><span>' + title[i] + '</span><span id='+ title[i] + '>' + num[i] + '</span></div>'
+          queueMicrotask(()=> {
+            statistic.push(new CountUp(title[i], 0, num[i], 0, 2, {
+                useEasing: true,
+                useGrouping: true,
+                separator: ',',
+                decimal: '.',
+                prefix: '',
+                suffix: ''
+            }))
+          })
+      }
+
+      function statisticUP () {
+        let statisticElment = document.querySelector('.about-statistic.author-content-item');
+        if(isInViewPortOfOne(statisticElment)) {
+          for (let i = 0; i < num.length; i++) {
+            if (i == 0 || i == num.length - 1) continue;
+            statistic[i-1].start();
+          }
+          document.removeEventListener('scroll', throttleStatisticUP);
+        }
+      }
+
+      const selfInfoContentYear = new CountUp('selfInfo-content-year', 0, 2002, 0, 2, {
+        useEasing: true,
+        useGrouping: false,
+        separator: ',',
+        decimal: '.',
+        prefix: '',
+        suffix: ''
+      })
+
+      function scrollSelfInfoContentYear() {
+        let selfInfoContentYearElment = document.querySelector('.author-content-item.selfInfo.single');
+        if (selfInfoContentYearElment && isInViewPortOfOne(selfInfoContentYearElment)) {
+          selfInfoContentYear.start()
+          document.removeEventListener('scroll', throttleScrollSelfInfoContentYear);
+        }
+      }
+      const throttleStatisticUP = btf.throttle(statisticUP, 200)
+      document.addEventListener('scroll', throttleStatisticUP, {passive: true})
+
+      const throttleScrollSelfInfoContentYear = btf.throttle(scrollSelfInfoContentYear, 200)
+      document.addEventListener('scroll', throttleScrollSelfInfoContentYear, {passive: true})
+  });
+
+  var pursuitInterval = null;
+    pursuitInterval = setInterval(function () {
+      const show = document.querySelector('span[data-show]')
+      const next = show.nextElementSibling || document.querySelector('.first-tips')
+      const up = document.querySelector('span[data-up]')
+
+      if (up) {
+        up.removeAttribute('data-up')
+      }
+
+      show.removeAttribute('data-show')
+      show.setAttribute('data-up', '')
+
+      next.setAttribute('data-show', '')
+    }, 2000)
+
+    document.addEventListener('pjax:send', function(){
+      clearInterval(pursuitInterval);
+    });
+
+    var helloAboutEl = document.querySelector('.hello-about')
+    helloAboutEl.addEventListener("mousemove", evt => {
+      const mouseX = evt.offsetX;
+      const mouseY = evt.offsetY;
+      gsap.set(".cursor", {
+        x: mouseX,
+        y: mouseY,
+      })
+
+      gsap.to(".shape", {
+        x: mouseX,
+        y: mouseY,
+        stagger: -0.1
+      })
+    })
+})()</script></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By 李阳</div><div class="footer_custom_text">下次再见！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+      
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script></div><script src="/js/footer.js"></script><script src="/js/countup.js"></script><script src="/js/APlayer.min.js"></script><script src="/js/Meting2.min.js"></script><script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script><script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script><script> LA.init({id:"{3KOJne8bzHjejaBV}",ck:"{3KOJne8bzHjejaBV}"})</script><script>new LingQue.Monitor().init({id:"3KOJne8bzHjejaBV",sendSuspicious:true});</script><script async data-pjax src="/js/anzhiyu.js"></script><script async data-pjax src="/js/anzhiyufunction.js"></script><script async src="/js/anzhiyuOnlyOne.js"></script><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script><script src="https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404.html')
+    }
+  })
+})()</script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><div id="nav-music"><div id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()">播放音乐<div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+      
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script></div><script src="/js/footer.js"></script><script src="/js/countup.js"></script><script src="/js/APlayer.min.js"></script><script src="/js/Meting2.min.js"></script><script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script><script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script><script> LA.init({id:"{3KOJne8bzHjejaBV}",ck:"{3KOJne8bzHjejaBV}"})</script><script>new LingQue.Monitor().init({id:"3KOJne8bzHjejaBV",sendSuspicious:true});</script><script async data-pjax src="/js/anzhiyu.js"></script><script async data-pjax src="/js/anzhiyufunction.js"></script><script async src="/js/anzhiyuOnlyOne.js"></script><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script><script src="https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404.html')
+    }
+  })
+})()</script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left"},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2}});</script></body></html>
