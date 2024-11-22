@@ -1,1 +1,313 @@
-function _typeof4(t){return(_typeof4="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function _typeof3(t){return(_typeof3="function"==typeof Symbol&&"symbol"==_typeof4(Symbol.iterator)?function(t){return _typeof4(t)}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":_typeof4(t)})(t)}function _typeof2(t){return(_typeof2="function"==typeof Symbol&&"symbol"==_typeof3(Symbol.iterator)?function(t){return _typeof3(t)}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":_typeof3(t)})(t)}function _typeof(t){return(_typeof="function"==typeof Symbol&&"symbol"==_typeof2(Symbol.iterator)?function(t){return _typeof2(t)}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":_typeof2(t)})(t)}function ownKeys(e,t){var o,n=Object.keys(e);return Object.getOwnPropertySymbols&&(o=Object.getOwnPropertySymbols(e),t&&(o=o.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,o)),n}function _objectSpread(e){for(var t=1;t<arguments.length;t++){var o=null!=arguments[t]?arguments[t]:{};t%2?ownKeys(Object(o),!0).forEach(function(t){_defineProperty(e,t,o[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(o)):ownKeys(Object(o)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(o,t))})}return e}function _defineProperty(t,e,o){return(e=_toPropertyKey(e))in t?Object.defineProperty(t,e,{value:o,enumerable:!0,configurable:!0,writable:!0}):t[e]=o,t}function _toPropertyKey(t){return"symbol"==_typeof(t=_toPrimitive(t,"string"))?t:t+""}function _toPrimitive(t,e){if("object"!=_typeof(t)||!t)return t;var o=t[Symbol.toPrimitive];if(void 0===o)return("string"===e?String:Number)(t);if("object"!=_typeof(o=o.call(t,e||"default")))return o;throw new TypeError("@@toPrimitive must return a primitive value.")}function _slicedToArray(t,e){return _arrayWithHoles(t)||_iterableToArrayLimit(t,e)||_unsupportedIterableToArray(t,e)||_nonIterableRest()}function _nonIterableRest(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _unsupportedIterableToArray(t,e){var o;if(t)return"string"==typeof t?_arrayLikeToArray(t,e):"Map"===(o="Object"===(o={}.toString.call(t).slice(8,-1))&&t.constructor?t.constructor.name:o)||"Set"===o?Array.from(t):"Arguments"===o||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(o)?_arrayLikeToArray(t,e):void 0}function _arrayLikeToArray(t,e){(null==e||e>t.length)&&(e=t.length);for(var o=0,n=Array(e);o<e;o++)n[o]=t[o];return n}function _iterableToArrayLimit(t,e){var o=null==t?null:"undefined"!=typeof Symbol&&t[Symbol.iterator]||t["@@iterator"];if(null!=o){var n,r,i,a,l=[],c=!0,u=!1;try{if(i=(o=o.call(t)).next,0===e){if(Object(o)!==o)return;c=!1}else for(;!(c=(n=i.call(o)).done)&&(l.push(n.value),l.length!==e);c=!0);}catch(t){u=!0,r=t}finally{try{if(!c&&null!=o.return&&(a=o.return(),Object(a)!==a))return}finally{if(u)throw r}}return l}}function _arrayWithHoles(t){if(Array.isArray(t))return t}(()=>{var o,n,r,t={debounce:function(r){var i,a=1<arguments.length&&void 0!==arguments[1]?arguments[1]:0,l=2<arguments.length&&void 0!==arguments[2]&&arguments[2];return function(){for(var t=arguments.length,e=new Array(t),o=0;o<t;o++)e[o]=arguments[o];var n=l&&!i;clearTimeout(i),i=setTimeout(function(){i=null,l||r.apply(void 0,e)},a),n&&r.apply(void 0,e)}},throttle:function(i,a){function l(){s=!1===y.leading?0:(new Date).getTime(),c=null,i.apply(u,f),c||(u=f=null)}var c,u,f,d=this,y=2<arguments.length&&void 0!==arguments[2]?arguments[2]:{},s=0;return function(){var t=(new Date).getTime(),e=(s||!1!==y.leading||(s=t),a-(t-s));u=d;for(var o=arguments.length,n=new Array(o),r=0;r<o;r++)n[r]=arguments[r];f=n,e<=0||a<e?(c&&(clearTimeout(c),c=null),s=t,i.apply(u,f),c||(u=f=null)):c||!1===y.trailing||(c=setTimeout(l,e))}},overflowPaddingR:{add:function(){var t,e=window.innerWidth-document.body.clientWidth;0<e&&(document.body.style.paddingRight="".concat(e,"px"),document.body.style.overflow="hidden",t=document.querySelector("#page-header.nav-fixed #menus"))&&(t.style.paddingRight="".concat(e,"px"))},remove:function(){document.body.style.paddingRight="",document.body.style.overflow="";var t=document.querySelector("#page-header.nav-fixed #menus");t&&(t.style.paddingRight="")}},snackbarShow:function(t){var e=1<arguments.length&&void 0!==arguments[1]&&arguments[1],o=2<arguments.length&&void 0!==arguments[2]?arguments[2]:2e3,n=(i=GLOBAL_CONFIG.Snackbar).position,r=i.bgLight,i=i.bgDark,r="light"===document.documentElement.getAttribute("data-theme")?r:i;Snackbar.show({text:t,backgroundColor:r,showAction:e,duration:o,pos:n,customClass:"snackbar-css"})},diffDate:function(t){var e=1<arguments.length&&void 0!==arguments[1]&&arguments[1],o=new Date,t=new Date(t),n=(o=(o-t)/1e3/60)/60,r=n/24,i=r/30,a=GLOBAL_CONFIG.dateSuffix;return e?12<i?t.toISOString().slice(0,10):1<=i?"".concat(Math.floor(i)," ").concat(a.month):1<=r?"".concat(Math.floor(r)," ").concat(a.day):1<=n?"".concat(Math.floor(n)," ").concat(a.hour):1<=o?"".concat(Math.floor(o)," ").concat(a.min):a.just:Math.floor(r)},loadComment:function(t,e){var o;"IntersectionObserver"in window?(o=new IntersectionObserver(function(t){t[0].isIntersecting&&(e(),o.disconnect())},{threshold:[0]})).observe(t):e()},scrollToDest:function(e){var o,n,r=1<arguments.length&&void 0!==arguments[1]?arguments[1]:500,i=window.scrollY,t=document.getElementById("page-header").classList.contains("fixed");(e<i||t)&&(e-=70),"scrollBehavior"in document.documentElement.style?window.scrollTo({top:e,behavior:"smooth"}):(o=performance.now(),n=function(t){t=Math.min((t-o)/r,1),window.scrollTo(0,i+(e-i)*t),t<1&&requestAnimationFrame(n)},requestAnimationFrame(n))},animateIn:function(t,e){t.style.display="block",t.style.animation=e},animateOut:function(e,t){e.addEventListener("animationend",function t(){e.style.display="",e.style.animation="",e.removeEventListener("animationend",t)}),e.style.animation=t},wrap:function(t,e,o){for(var n=document.createElement(e),r=0,i=Object.entries(o);r<i.length;r++){var a=_slicedToArray(i[r],2),l=a[0];n.setAttribute(l,a[1])}t.parentNode.insertBefore(n,t),n.appendChild(t)},isHidden:function(t){return 0===t.offsetHeight&&0===t.offsetWidth},getEleTop:function(t){for(var e=t.offsetTop,o=t.offsetParent;null!==o;)e+=o.offsetTop,o=o.offsetParent;return e},loadLightbox:function(t){var e=GLOBAL_CONFIG.lightbox;"medium_zoom"===e&&mediumZoom(t,{background:"var(--zoom-bg)"}),"fancybox"===e&&(Array.from(t).forEach(function(t){var e,o;"A"!==t.parentNode.tagName&&(e=t.dataset.lazySrc||t.src,o=t.title||t.alt||"",btf.wrap(t,"a",{href:e,"data-fancybox":"gallery","data-caption":o,"data-thumb":e}))}),window.fancyboxRun||(Fancybox.bind("[data-fancybox]",{Hash:!1,Thumbs:{showOnStart:!1},Images:{Panzoom:{maxScale:4}},Carousel:{transition:"slide"},Toolbar:{display:{left:["infobar"],middle:["zoomIn","zoomOut","toggle1to1","rotateCCW","rotateCW","flipX","flipY"],right:["slideshow","thumbs","close"]}}}),window.fancyboxRun=!0))},setLoading:{add:function(t){t.insertAdjacentHTML("afterend",'\n        <div class="loading-container">\n          <div class="loading-item">\n            <div></div><div></div><div></div><div></div><div></div>\n          </div>\n        </div>\n      ')},remove:function(t){t.nextElementSibling.remove()}},updateAnchor:function(t){var e;t!==window.location.hash&&(t=t||location.pathname,e=GLOBAL_CONFIG_SITE.title,window.history.replaceState({url:location.href,title:e},e,t))},getScrollPercent:function(t,e){return o&&e.clientHeight===o||(o=e.clientHeight,r=window.innerHeight,n=e.offsetTop,r=Math.max(o-r,document.documentElement.scrollHeight-r)),e=(t-n)/r,Math.max(0,Math.min(100,Math.round(100*e)))},addEventListenerPjax:function(t,e,o){var n=3<arguments.length&&void 0!==arguments[3]&&arguments[3];t.addEventListener(e,o,n),btf.addGlobalFn("pjaxSendOnce",function(){t.removeEventListener(e,o,n)})},removeGlobalFnEvent:function(t){var e=(1<arguments.length&&void 0!==arguments[1]?arguments[1]:window).globalFn||{},o=e[t];o&&(Object.keys(o).forEach(function(t){return o[t]()}),delete e[t])},switchComments:function(){var t,e,o=0<arguments.length&&void 0!==arguments[0]?arguments[0]:document,n=1<arguments.length?arguments[1]:void 0,r=o.querySelector("#switch-btn");r&&(t=!1,e=o.querySelector("#post-comment"),btf.addEventListenerPjax(r,"click",function(){e.classList.toggle("move"),t||"function"!=typeof loadOtherComment||(t=!0,loadOtherComment(o,n))}))}};window.btf=_objectSpread(_objectSpread({},window.btf),t)})();
+(() => {
+  const btfFn = {
+    debounce: (func, wait = 0, immediate = false) => {
+      let timeout
+      return (...args) => {
+        const later = () => {
+          timeout = null
+          if (!immediate) func(...args)
+        }
+        const callNow = immediate && !timeout
+        clearTimeout(timeout)
+        timeout = setTimeout(later, wait)
+        if (callNow) func(...args)
+      }
+    },
+
+    throttle: function (func, wait, options = {}) {
+      let timeout, context, args
+      let previous = 0
+
+      const later = () => {
+        previous = options.leading === false ? 0 : new Date().getTime()
+        timeout = null
+        func.apply(context, args)
+        if (!timeout) context = args = null
+      }
+
+      const throttled = (...params) => {
+        const now = new Date().getTime()
+        if (!previous && options.leading === false) previous = now
+        const remaining = wait - (now - previous)
+        context = this
+        args = params
+        if (remaining <= 0 || remaining > wait) {
+          if (timeout) {
+            clearTimeout(timeout)
+            timeout = null
+          }
+          previous = now
+          func.apply(context, args)
+          if (!timeout) context = args = null
+        } else if (!timeout && options.trailing !== false) {
+          timeout = setTimeout(later, remaining)
+        }
+      }
+
+      return throttled
+    },
+
+    overflowPaddingR: {
+      add: () => {
+        const paddingRight = window.innerWidth - document.body.clientWidth
+
+        if (paddingRight > 0) {
+          document.body.style.paddingRight = `${paddingRight}px`
+          document.body.style.overflow = 'hidden'
+          const menuElement = document.querySelector('#page-header.nav-fixed #menus')
+          if (menuElement) {
+            menuElement.style.paddingRight = `${paddingRight}px`
+          }
+        }
+      },
+      remove: () => {
+        document.body.style.paddingRight = ''
+        document.body.style.overflow = ''
+        const menuElement = document.querySelector('#page-header.nav-fixed #menus')
+        if (menuElement) {
+          menuElement.style.paddingRight = ''
+        }
+      }
+    },
+
+    snackbarShow: (text, showAction = false, duration = 2000) => {
+      const { position, bgLight, bgDark } = GLOBAL_CONFIG.Snackbar
+      const bg = document.documentElement.getAttribute('data-theme') === 'light' ? bgLight : bgDark
+      Snackbar.show({
+        text,
+        backgroundColor: bg,
+        showAction,
+        duration,
+        pos: position,
+        customClass: 'snackbar-css'
+      })
+    },
+
+    diffDate: (inputDate, more = false) => {
+      const dateNow = new Date()
+      const datePost = new Date(inputDate)
+      const diffMs = dateNow - datePost
+      const diffSec = diffMs / 1000
+      const diffMin = diffSec / 60
+      const diffHour = diffMin / 60
+      const diffDay = diffHour / 24
+      const diffMonth = diffDay / 30
+      const { dateSuffix } = GLOBAL_CONFIG
+
+      if (!more) return Math.floor(diffDay)
+
+      if (diffMonth > 12) return datePost.toISOString().slice(0, 10)
+      if (diffMonth >= 1) return `${Math.floor(diffMonth)} ${dateSuffix.month}`
+      if (diffDay >= 1) return `${Math.floor(diffDay)} ${dateSuffix.day}`
+      if (diffHour >= 1) return `${Math.floor(diffHour)} ${dateSuffix.hour}`
+      if (diffMin >= 1) return `${Math.floor(diffMin)} ${dateSuffix.min}`
+      return dateSuffix.just
+    },
+
+    loadComment: (dom, callback) => {
+      if ('IntersectionObserver' in window) {
+        const observerItem = new IntersectionObserver((entries) => {
+          if (entries[0].isIntersecting) {
+            callback()
+            observerItem.disconnect()
+          }
+        }, { threshold: [0] })
+        observerItem.observe(dom)
+      } else {
+        callback()
+      }
+    },
+
+    scrollToDest: (pos, time = 500) => {
+      const currentPos = window.scrollY
+      const isNavFixed = document.getElementById('page-header').classList.contains('fixed')
+      if (currentPos > pos || isNavFixed) pos = pos - 70
+
+      if ('scrollBehavior' in document.documentElement.style) {
+        window.scrollTo({
+          top: pos,
+          behavior: 'smooth'
+        })
+        return
+      }
+
+      const startTime = performance.now()
+      const animate = currentTime => {
+        const timeElapsed = currentTime - startTime
+        const progress = Math.min(timeElapsed / time, 1)
+        window.scrollTo(0, currentPos + (pos - currentPos) * progress)
+        if (progress < 1) {
+          requestAnimationFrame(animate)
+        }
+      }
+      requestAnimationFrame(animate)
+    },
+
+    animateIn: (ele, animation) => {
+      ele.style.display = 'block'
+      ele.style.animation = animation
+    },
+
+    animateOut: (ele, animation) => {
+      const handleAnimationEnd = () => {
+        ele.style.display = ''
+        ele.style.animation = ''
+        ele.removeEventListener('animationend', handleAnimationEnd)
+      }
+      ele.addEventListener('animationend', handleAnimationEnd)
+      ele.style.animation = animation
+    },
+
+    wrap: (selector, eleType, options) => {
+      const createEle = document.createElement(eleType)
+      for (const [key, value] of Object.entries(options)) {
+        createEle.setAttribute(key, value)
+      }
+      selector.parentNode.insertBefore(createEle, selector)
+      createEle.appendChild(selector)
+    },
+
+    isHidden: ele => ele.offsetHeight === 0 && ele.offsetWidth === 0,
+
+    getEleTop: ele => {
+      let actualTop = ele.offsetTop
+      let current = ele.offsetParent
+
+      while (current !== null) {
+        actualTop += current.offsetTop
+        current = current.offsetParent
+      }
+
+      return actualTop
+    },
+
+    loadLightbox: ele => {
+      const service = GLOBAL_CONFIG.lightbox
+
+      if (service === 'medium_zoom') {
+        mediumZoom(ele, { background: 'var(--zoom-bg)' })
+      }
+
+      if (service === 'fancybox') {
+        Array.from(ele).forEach(i => {
+          if (i.parentNode.tagName !== 'A') {
+            const dataSrc = i.dataset.lazySrc || i.src
+            const dataCaption = i.title || i.alt || ''
+            btf.wrap(i, 'a', { href: dataSrc, 'data-fancybox': 'gallery', 'data-caption': dataCaption, 'data-thumb': dataSrc })
+          }
+        })
+
+        if (!window.fancyboxRun) {
+          Fancybox.bind('[data-fancybox]', {
+            Hash: false,
+            Thumbs: {
+              showOnStart: false
+            },
+            Images: {
+              Panzoom: {
+                maxScale: 4
+              }
+            },
+            Carousel: {
+              transition: 'slide'
+            },
+            Toolbar: {
+              display: {
+                left: ['infobar'],
+                middle: [
+                  'zoomIn',
+                  'zoomOut',
+                  'toggle1to1',
+                  'rotateCCW',
+                  'rotateCW',
+                  'flipX',
+                  'flipY'
+                ],
+                right: ['slideshow', 'thumbs', 'close']
+              }
+            }
+          })
+          window.fancyboxRun = true
+        }
+      }
+    },
+
+    setLoading: {
+      add: ele => {
+        const html = `
+        <div class="loading-container">
+          <div class="loading-item">
+            <div></div><div></div><div></div><div></div><div></div>
+          </div>
+        </div>
+      `
+        ele.insertAdjacentHTML('afterend', html)
+      },
+      remove: ele => {
+        ele.nextElementSibling.remove()
+      }
+    },
+
+    updateAnchor: anchor => {
+      if (anchor !== window.location.hash) {
+        if (!anchor) anchor = location.pathname
+        const title = GLOBAL_CONFIG_SITE.title
+        window.history.replaceState({
+          url: location.href,
+          title
+        }, title, anchor)
+      }
+    },
+
+    getScrollPercent: (() => {
+      let docHeight, winHeight, headerHeight, contentMath
+
+      return (currentTop, ele) => {
+        if (!docHeight || ele.clientHeight !== docHeight) {
+          docHeight = ele.clientHeight
+          winHeight = window.innerHeight
+          headerHeight = ele.offsetTop
+          contentMath = Math.max(docHeight - winHeight, document.documentElement.scrollHeight - winHeight)
+        }
+
+        const scrollPercent = (currentTop - headerHeight) / contentMath
+        return Math.max(0, Math.min(100, Math.round(scrollPercent * 100)))
+      }
+    })(),
+
+    addEventListenerPjax: (ele, event, fn, option = false) => {
+      ele.addEventListener(event, fn, option)
+      btf.addGlobalFn('pjaxSendOnce', () => {
+        ele.removeEventListener(event, fn, option)
+      })
+    },
+
+    removeGlobalFnEvent: (key, parent = window) => {
+      const globalFn = parent.globalFn || {}
+      const keyObj = globalFn[key]
+      if (!keyObj) return
+
+      Object.keys(keyObj).forEach(i => keyObj[i]())
+
+      delete globalFn[key]
+    },
+
+    switchComments: (el = document, path) => {
+      const switchBtn = el.querySelector('#switch-btn')
+      if (!switchBtn) return
+
+      let switchDone = false
+      const postComment = el.querySelector('#post-comment')
+      const handleSwitchBtn = () => {
+        postComment.classList.toggle('move')
+        if (!switchDone && typeof loadOtherComment === 'function') {
+          switchDone = true
+          loadOtherComment(el, path)
+        }
+      }
+      btf.addEventListenerPjax(switchBtn, 'click', handleSwitchBtn)
+    }
+  }
+
+  window.btf = { ...window.btf, ...btfFn }
+})()

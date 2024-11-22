@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://lyay23.github.io/charts/index.html</loc>
+    <loc>http://lyay23.github.io/essay/index.html</loc>
     
     <lastmod>2024-11-22</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://lyay23.github.io/essay/index.html</loc>
+    <loc>http://lyay23.github.io/charts/index.html</loc>
     
     <lastmod>2024-11-22</lastmod>
     
@@ -155,7 +155,7 @@
   </url>
   
   <url>
-    <loc>http://lyay23.github.io/lib/three/package.json</loc>
+    <loc>http://lyay23.github.io/lib/three/renovate.json</loc>
     
     <lastmod>2023-06-04</lastmod>
     
@@ -164,7 +164,7 @@
   </url>
   
   <url>
-    <loc>http://lyay23.github.io/lib/three/renovate.json</loc>
+    <loc>http://lyay23.github.io/lib/three/package.json</loc>
     
     <lastmod>2023-06-04</lastmod>
     
