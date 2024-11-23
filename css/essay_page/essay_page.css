@@ -234,10 +234,11 @@
 /* 顶部样式 */
 .author-content.author-content-item.essayPage {
   height: 19rem;
-  background: url(/img/me.jpg) left 28% / cover no-repeat;
+  background: url(/img/bg_2.png) left 28% / cover no-repeat;
   color: var(--anzhiyu-white);
   overflow: hidden;
   margin-top: 0px;
+  object-fit: cover;
   position: relative; /改这里/
 }
 /增加下边内容后运行看一下效果/
