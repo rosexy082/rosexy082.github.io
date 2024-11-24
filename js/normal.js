@@ -1,0 +1,1 @@
+var swiper;document.querySelector("#bber-talk")&&(swiper=new Swiper(".swiper-container",{direction:"vertical",loop:!0,autoplay:{delay:3e3,pauseOnMouseEnter:!0}}));
