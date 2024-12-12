@@ -9,7 +9,6 @@ http://xw-well-being.github.io/categories/index.html
 http://xw-well-being.github.io/tags/index.html
 http://xw-well-being.github.io/tages/index.html
 http://xw-well-being.github.io/resources/index.html
-http://xw-well-being.github.io/posts/9ec06885/
 http://xw-well-being.github.io/lib/pace/README.html
 http://xw-well-being.github.io/lib/three/README.html
 http://xw-well-being.github.io/lib/three/package.json
