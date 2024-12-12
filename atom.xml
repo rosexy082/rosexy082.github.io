@@ -3,11 +3,11 @@
   <title>小万</title>
   
   <subtitle>欢迎光临！</subtitle>
-  <link href="http://xw-well-being.github.io/atom.xml" rel="self"/>
+  <link href="http://rosexy082.github.io/atom.xml" rel="self"/>
   
-  <link href="http://xw-well-being.github.io/"/>
+  <link href="http://rosexy082.github.io/"/>
   <updated>2024-12-12T12:16:42.658Z</updated>
-  <id>http://xw-well-being.github.io/</id>
+  <id>http://rosexy082.github.io/</id>
   
   <author>
     <name>万芳语</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>这是文章测试</title>
-    <link href="http://xw-well-being.github.io/posts/6ead9846/"/>
-    <id>http://xw-well-being.github.io/posts/6ead9846/</id>
+    <link href="http://rosexy082.github.io/posts/6ead9846/"/>
+    <id>http://rosexy082.github.io/posts/6ead9846/</id>
     <published>2024-10-21T13:34:21.000Z</published>
     <updated>2024-12-12T12:16:42.658Z</updated>
     
@@ -30,10 +30,10 @@
     
     
     
-    <category term="力扣" scheme="http://xw-well-being.github.io/categories/%E5%8A%9B%E6%89%A3/"/>
+    <category term="力扣" scheme="http://rosexy082.github.io/categories/%E5%8A%9B%E6%89%A3/"/>
     
     
-    <category term="力扣刷题" scheme="http://xw-well-being.github.io/tags/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98/"/>
+    <category term="力扣刷题" scheme="http://rosexy082.github.io/tags/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98/"/>
     
   </entry>
   
