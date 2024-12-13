@@ -235,4 +235,15 @@
         <tag>java</tag>
       </tags>
   </entry>
+  <entry>
+    <title>这是文章测试</title>
+    <url>/posts/8769959e/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>力扣</category>
+      </categories>
+      <tags>
+        <tag>力扣刷题</tag>
+      </tags>
+  </entry>
 </search>
