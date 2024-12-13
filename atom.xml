@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>小万</title>
+  <title>李阳</title>
   
-  <subtitle>欢迎光临！</subtitle>
+  <subtitle>哈哈哈！</subtitle>
   <link href="http://rosexy082.github.io/atom.xml" rel="self"/>
   
   <link href="http://rosexy082.github.io/"/>
@@ -10,7 +10,7 @@
   <id>http://rosexy082.github.io/</id>
   
   <author>
-    <name>万芳语</name>
+    <name>李阳</name>
     
   </author>
   
