@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>http://rosexy082.github.io/posts/8769959e/</loc>
+    
+    <lastmod>2024-12-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://rosexy082.github.io/music/index.html</loc>
     
     <lastmod>2024-11-24</lastmod>
@@ -152,10 +161,24 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>http://rosexy082.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2024-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
     <loc>http://rosexy082.github.io/categories/%E5%8A%9B%E6%89%A3/</loc>
+    <lastmod>2024-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://rosexy082.github.io/categories/%E5%93%88%E5%93%88%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2024-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
