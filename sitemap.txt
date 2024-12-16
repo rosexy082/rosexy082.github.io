@@ -1,3 +1,4 @@
+http://rosexy082.github.io/about/index.html
 http://rosexy082.github.io/essay/index.html
 http://rosexy082.github.io/posts/ea7e7a74/
 http://rosexy082.github.io/posts/62ba4e28/
@@ -7,7 +8,6 @@ http://rosexy082.github.io/posts/1ce14981/
 http://rosexy082.github.io/posts/d58ccc41/
 http://rosexy082.github.io/music/index.html
 http://rosexy082.github.io/charts/index.html
-http://rosexy082.github.io/about/index.html
 http://rosexy082.github.io/comment/index.html
 http://rosexy082.github.io/guestbook/index.html
 http://rosexy082.github.io/categories/index.html
